@@ -1,0 +1,54 @@
+{
+  "name": "remaptrace",
+  "version": "0.1.0",
+  "description": "Apply source maps to minified JS stack traces in batch — whole log files in, readable traces out, fully offline, with bundle/map consistency checks.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "remaptrace": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "source-maps",
+    "stack-trace",
+    "desymbolize",
+    "minified",
+    "logs",
+    "debugging",
+    "cli",
+    "offline"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/remaptrace.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/remaptrace#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/remaptrace/issues"
+  }
+}

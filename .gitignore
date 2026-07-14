@@ -1,0 +1,6 @@
+node_modules/
+# the compiled output only — examples/dist is a committed fixture
+/dist/
+*.tgz
+.DS_Store
+npm-debug.log*

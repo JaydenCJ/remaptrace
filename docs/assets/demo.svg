@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="478" viewBox="0 0 760 478" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">
+  <rect width="760" height="478" rx="10" fill="#0d1117"/>
+  <rect width="760" height="34" rx="10" fill="#161b22"/>
+  <circle cx="20" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="60" cy="17" r="6" fill="#28c840"/>
+  <text x="380" y="21" fill="#8b949e" text-anchor="middle">remaptrace — whole log files in, readable stack traces out</text>
+
+  <text x="24" y="64" fill="#7ee787">$ remaptrace remap prod.log --maps dist/ --stats</text>
+
+  <text x="24" y="92" fill="#8b949e">2026-07-12T09:14:03.184Z ERROR checkout failed for order 84213</text>
+  <text x="24" y="112" fill="#c9d1d9">Error: unknown discount code: WINTER25</text>
+  <text x="24" y="132" fill="#c9d1d9">    at <tspan fill="#79c0ff">applyDiscount</tspan> (<tspan fill="#3fb950">src/checkout.js:6:5</tspan>)</text>
+  <text x="24" y="152" fill="#c9d1d9">    at <tspan fill="#79c0ff">computeTotal</tspan> (<tspan fill="#3fb950">src/checkout.js:12:22</tspan>)</text>
+  <text x="24" y="172" fill="#c9d1d9">    at <tspan fill="#79c0ff">handleCheckout</tspan> (<tspan fill="#3fb950">src/main.js:5:17</tspan>)</text>
+  <text x="24" y="192" fill="#8b949e">    at processTicksAndRejections (node:internal/process/task_queues:95:5)</text>
+  <text x="24" y="216" fill="#8b949e">{"level":"error","msg":"unhandled rejection","stack":"Error: …\n    at <tspan fill="#79c0ff">applyDiscount</tspan> (<tspan fill="#3fb950">src/checkout.js:6:5</tspan>)…"}</text>
+  <text x="24" y="240" fill="#8b949e">    at t (vendor.min.js:1:9101)   <tspan fill="#d29922">← no map: passes through untouched</tspan></text>
+
+  <text x="24" y="268" fill="#c9d1d9">remaptrace: 9 frame(s) found, <tspan fill="#3fb950">7 remapped</tspan>, 1 unmapped, <tspan fill="#d29922">1 unresolved (no map for:</tspan></text>
+  <text x="24" y="286" fill="#c9d1d9"><tspan fill="#d29922">vendor.min.js ×1)</tspan>; 1 JSON line(s) rewritten</text>
+
+  <text x="24" y="322" fill="#7ee787">$ remaptrace check dist/</text>
+  <text x="24" y="346" fill="#79c0ff">dist/app.min.js.map</text>
+  <text x="24" y="366" fill="#c9d1d9">  <tspan fill="#d29922">warning W206</tspan> map addresses generated line 5 but the bundle has only 3 line(s) —</text>
+  <text x="24" y="384" fill="#c9d1d9">stale or mismatched pair</text>
+  <text x="24" y="404" fill="#3fb950">      fix: redeploy bundle and map from the same build</text>
+  <text x="24" y="434" fill="#c9d1d9">remaptrace: <tspan fill="#f85149">FAIL</tspan> — 0 error(s), 1 warning(s), 0 info (fail-on: warning)  <tspan fill="#8b949e">exit 1</tspan></text>
+
+  <text x="24" y="462" fill="#8b949e"># zero dependencies · fully offline · V8 + Firefox/Safari traces · JSON log lines</text>
+</svg>

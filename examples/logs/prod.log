@@ -1,0 +1,13 @@
+2026-07-12T09:14:03.184Z ERROR checkout failed for order 84213
+Error: unknown discount code: WINTER25
+    at d (https://cdn.example.test/assets/app.min.js:1:36)
+    at m (https://cdn.example.test/assets/app.min.js:1:139)
+    at h (https://cdn.example.test/assets/app.min.js:1:204)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-07-12T09:14:03.190Z INFO retry scheduled for order 84213
+{"level":"error","ts":"2026-07-12T09:15:11.402Z","msg":"unhandled rejection","stack":"Error: unknown discount code: WINTER25\n    at d (https://cdn.example.test/assets/app.min.js:1:36)\n    at m (https://cdn.example.test/assets/app.min.js:1:139)"}
+2026-07-12T09:16:42.001Z ERROR third-party widget crashed
+    at t (https://cdn.example.test/assets/vendor.min.js:1:9101)
+2026-07-12T09:17:05.330Z WARN trace reported by a Firefox client:
+m@https://cdn.example.test/assets/app.min.js:1:139
+h@https://cdn.example.test/assets/app.min.js:1:204
