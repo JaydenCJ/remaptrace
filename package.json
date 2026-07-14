@@ -2,7 +2,7 @@
   "name": "remaptrace",
   "version": "0.1.0",
   "description": "Apply source maps to minified JS stack traces in batch — whole log files in, readable traces out, fully offline, with bundle/map consistency checks.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
